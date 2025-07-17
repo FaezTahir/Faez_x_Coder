@@ -306,7 +306,7 @@ nav {
 #about h2::after {
   content: '';
   display: block;
-  width: 100px;
+  width: 140px;
   height: 4px;
   background-color: #ffdce4;
   margin: 0.8rem auto 2rem auto;
