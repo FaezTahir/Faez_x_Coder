@@ -9,14 +9,13 @@ header {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Layout */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Brand Title */
 .left {
   font-size: 2.1rem;
   font-weight: 700;
@@ -25,11 +24,13 @@ nav {
   letter-spacing: 1px;
 }
 
-/* Navigation Links */
 .right ul {
   display: flex;
   gap: 2rem;
   list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 1rem 0 0 0;
 }
 
 .right ul li a {
@@ -42,7 +43,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Hover Underline */
 .right ul li a::after {
   content: '';
   position: absolute;
@@ -62,6 +62,7 @@ nav {
 .right ul li a:hover::after {
   width: 100%;
 }
+
 .firstSection {
   display: flex;
   justify-content: space-between;
@@ -70,6 +71,7 @@ nav {
   background-color: #9e2a48;
   min-height: 90vh;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 /* Left Content (Text) */
@@ -84,17 +86,15 @@ nav {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  padding-left: 10rem; /* Right shift for larger screens */
+  padding-left: 10rem;
 }
 
-/* "Hi" and "My name is Faez" - Same size */
 .firstSection .left div:nth-child(1),
 .firstSection .left div:nth-child(2) {
   font-size: 2.2rem;
   font-weight: 600;
 }
 
-/* "Frontend Web Developer" with typing effect */
 .firstSection .left .typing-text {
   font-size: 1.8rem;
   font-weight: 500;
@@ -107,7 +107,6 @@ nav {
   padding-left: 0.2rem;
 }
 
-/* Typing keyframes */
 @keyframes typing {
   from { width: 0; }
   to { width: 21ch; }
@@ -118,12 +117,6 @@ nav {
   50% { border-color: #ffdce4; }
 }
 
-/* Responsive Design: Less padding on smaller screens */
-@media (max-width: 768px) {
-  .firstSection .left {
-    padding-left: 2rem; /* Less right shift on mobile */
-  }
-}
 /* Right Image */
 .firstSection .right {
   flex: 1;
@@ -143,18 +136,19 @@ nav {
 .firstSection .right img:hover {
   transform: scale(1.05);
 }
-/* Outer Section Background (same light mehroon) */
+
+/* Skills Section */
 .skill-Section {
-  background-color: #9e2a48; /* light mehroon */
+  background-color: #9e2a48;
   padding: 5rem 8%;
   font-family: 'Poppins', sans-serif;
   display: flex;
-  justify-content: flex-start; /* left align box */
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-/* Skills Box (left aligned) */
 .skill-Section .left {
-  background-color: #8b1c36; /* deep mehroon box */
+  background-color: #8b1c36;
   padding: 3rem 2.5rem;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -163,7 +157,6 @@ nav {
   width: 100%;
 }
 
-/* Section Heading */
 .skill-Section h2 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -171,7 +164,6 @@ nav {
   position: relative;
 }
 
-/* Underline */
 .skill-Section h2::after {
   content: '';
   display: block;
@@ -182,14 +174,12 @@ nav {
   border-radius: 2px;
 }
 
-/* Skill List */
 .skill-Section ul {
   list-style: none;
   padding-left: 0;
   margin-top: 2rem;
 }
 
-/* Skill Items with Bullet */
 .skill-Section li {
   position: relative;
   font-size: 1.5rem;
@@ -198,7 +188,6 @@ nav {
   font-weight: 500;
 }
 
-/* Custom Bullet Icon */
 .skill-Section li::before {
   content: '✔';
   position: absolute;
@@ -215,18 +204,19 @@ nav {
   font-size: 0.9rem;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
-/* Outer Section Background (same light mehroon as Skills) */
+
+/* What's Next Section */
 .w-next {
   background-color: #9e2a48;
   padding: 5rem 8%;
   font-family: 'Poppins', sans-serif;
   display: flex;
-  justify-content: flex-end; /* 👈 right align box */
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-/* Right Side Box */
 .w-next .left {
-  background-color: #8b1c36; /* deep mehroon */
+  background-color: #8b1c36;
   padding: 3rem 2.5rem;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -235,7 +225,6 @@ nav {
   width: 100%;
 }
 
-/* Heading Styling */
 .w-next h2 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -243,7 +232,6 @@ nav {
   position: relative;
 }
 
-/* Underline below heading */
 .w-next h2::after {
   content: '';
   display: block;
@@ -254,14 +242,12 @@ nav {
   border-radius: 2px;
 }
 
-/* List Reset */
 .w-next ul {
   list-style: none;
   padding-left: 0;
   margin-top: 2rem;
 }
 
-/* List Items */
 .w-next li {
   position: relative;
   font-size: 1.5rem;
@@ -270,7 +256,6 @@ nav {
   font-weight: 500;
 }
 
-/* Custom Bullet Icons */
 .w-next li::before {
   content: '✔';
   position: absolute;
@@ -287,9 +272,8 @@ nav {
   font-size: 0.9rem;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
-/* ================================
-   👤 About Section Styling (Updated)
-   ================================ */
+
+/* About Section */
 #about {
   background-color: #9e2a48;
   padding: 5rem 8%;
@@ -298,7 +282,6 @@ nav {
   justify-content: center;
 }
 
-/* 📦 Centered Box */
 #about > div {
   background-color: #8b1c36;
   padding: 3rem 2.5rem;
@@ -310,7 +293,6 @@ nav {
   text-align: center;
 }
 
-/* 🔠 Heading with Shine */
 #about h2 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -321,7 +303,6 @@ nav {
                0 0 20px rgba(255, 220, 228, 0.3);
 }
 
-/* ✨ Underline */
 #about h2::after {
   content: '';
   display: block;
@@ -333,7 +314,6 @@ nav {
   box-shadow: 0 0 10px rgba(255, 220, 228, 0.4);
 }
 
-/* 📝 Paragraph with Glow */
 #about p {
   font-size: 1.3rem;
   line-height: 1.8;
@@ -341,25 +321,22 @@ nav {
   color: #ffe6ec;
   text-shadow: 0 0 6px rgba(255, 220, 228, 0.3);
 }
-/* ============================
-   🔻 Footer Styling (Updated)
-   ============================ */
+
+/* Footer */
 footer {
-  background-color: #8b1c36; /* same as section box background */
+  background-color: #8b1c36;
   padding: 3rem 8%;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  color: #ffe6ec; /* light text for contrast */
+  color: #ffe6ec;
   border-top: 4px solid #b8314e;
 }
 
-/* Copyright Text */
 footer p {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
 
-/* Navigation Links */
 footer nav {
   margin: 1rem 0;
 }
@@ -377,7 +354,6 @@ footer nav a:hover {
   text-decoration: underline;
 }
 
-/* Social Icons (GitHub) */
 footer .social-icons {
   margin: 1rem 0;
 }
@@ -393,11 +369,65 @@ footer .social-icons a:hover {
   color: #ffffff;
 }
 
-/* Tagline Text */
 footer .tagline {
   font-style: italic;
   font-size: 1.1rem;
   color: #ffe6ec;
   margin-top: 1.2rem;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+    padding: 2rem 5%;
+    text-align: center;
+  }
+
+  .firstSection .left {
+    padding-left: 0;
+    font-size: 1.6rem;
+  }
+
+  .firstSection .left div:nth-child(1),
+  .firstSection .left div:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  .firstSection .left .typing-text {
+    font-size: 1.2rem;
+  }
+
+  .firstSection .right img {
+    max-width: 250px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .right ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skill-Section,
+  .w-next {
+    justify-content: center;
+  }
+
+  .skill-Section .left,
+  .w-next .left {
+    padding: 2rem 1.5rem;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    padding: 2rem 5%;
+  }
 }
